@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Genty";
+    src: url(Fuente/GentyDemo-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    background-color:#3EA66B;
+    width: 100%;
+    height: auto;
+}
+
+/*widget*/
+.contenedor-widget {
+    width: 100%;
+    height: 6vh;
+    padding-top: 1.5vh;
+    padding-left: 1.2vw;
+    padding-right: 1.2vw;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5vw;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.contenedor-widget-contacto {
+    display: flex;
+    gap: 3vw;
+    margin-right: 2vw;
+    align-items: center;
+}
+
+.contenedor-widget-contacto a {
+    font-size: 18px;
+    text-align: center;
+    align-items: center;
+}
+
+/*Contenedor Logo + Menu*/
+.contenedor-logo-menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    margin-top: 0.5%;
+    padding-bottom: 1%;
+}
+
+.logo-menu {
+    width: 120px;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+.menu-pc {
+    visibility: visible;
+}
+
+/*Menu Hamburguesa */
+.hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 28px;
+    height: 18px;
+    transition: transform 0.5s ease;
+}
+
+.hamburger.active {
+    transform: rotate(45deg);
+}
+
+.hamburger .line {
+    width: 100%;
+    height: 2px;
+    background-color:#303030;
+    transition: all 0.5s ease;
+}
+
+.hamburger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 3px);
+}
+
+.hamburger.active .line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.menu-mobil {
+    visibility: hidden;
+}
+
+#menu {
+    position: fixed;
+    top: 21vh;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #539893;
+    transition: left 0.5s ease;
+    z-index: 100;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding-top: 5px;
+    text-align: left;
+}
+
+#menu ul li {
+    margin: 20px 0;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 10px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: "Arial";
+    font-size: clamp(14px, 2vw, 18px);
+    transition: color 0.3s;
+}
+
+#menu ul li a:hover {
+    color: lightgray;
+}
+/* Fin Menu Hamburguesa */
+/*  Menu PC*/
+.menu-pc ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: end;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #303030;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.menu-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #e16f11;
+    transition: width 0.4s ease-in-out;
+}
+
+.menu-link:hover::after,
+.menu-link:focus::after {
+    width: 100%;
+}
+
+
+.menu-pc li {
+    padding: 3%;
+    margin-right: 5%;
+    position: relative;
+}
+
+.menu-pc li a{
+    text-decoration: none;
+    color: #303030;
+    font-family: "Arial";
+    font-weight: bolder;
+}
+
+/*Video*/
+.contenedor-video {
+    background-color: #3ea66b;
+    padding-top: 2%; 
+    padding-bottom: 2%;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+
+
+@media (min-width:320px) and (max-width:767px){
+
+    .menu-mobil {
+    visibility: visible;
+    position: absolute;
+    margin-right: 2%;
+    padding-top: 0.5%;
+    right: 2%;
+    transform: translateY(-50%);
+    z-index: 200;
+    }
+
+    .contenedor-logo-menu {
+        max-height: 80px;
+    }
+    .logo-menu {
+        width: 80px;
+    }
+    
+    .menu-pc {
+        visibility: hidden;
+    }
+}
