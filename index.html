@@ -44,7 +44,7 @@
 </head>
 <body>
 <header>
-    <!--Widget-->
+    <!--Widget
     <div class="contenedor-widget">
         <div> 
         <a href="#"><i class="fa-brands fa-facebook" style="color: #0866ff;"></i></a>
@@ -57,10 +57,11 @@
         <i data-bs-toggle="tooltip" title="Lun. a Vie. 10hs. a 18hs." class="fa-regular fa-clock" style="color: #B197FC;"></i>
         </div>
     </div>
-    <!--Fin Widget-->
+    Fin Widget-->
+
     <!--Contenedor Logo + Menu-->
     <div class="contenedor-logo-menu">
-    <a href="index.html"><img class="logo-menu" src="img/logo_implusa_menu_web.svg" alt="logo_impulsa_agencia_de_markrting_digital"></a> 
+    <a href="index.html"><img class="logo-menu-mobil" src="img/Logo_impulsa_menu_web.svg" alt="logo_impulsa_agencia_de_markrting_digital"></a> 
     <!--Menu Hamburguesa-->
     <div class="menu-mobil">  
         <div class="hamburger" id="hamburger" onclick="toggleMenu()">
@@ -72,14 +73,18 @@
     <!--Menu Mobil-->  
     <nav id="menu">
         <ul>
-            <li><a href="index.html" onclick="closeMenu()">Inicio</a></li>
-            <li><a href="#nosotros" onclick="closeMenu()">Nosotros</a></li>
-            <li><a href="#servicios" onclick="closeMenu()">Servicios</a></li>
-            <li><a href="#contacto" onclick="closeMenu()">Contacto</a></li>
+            <li><a href="index.html" class="menu-link" onclick="closeMenu()">Inicio</a></li>
+            <li><a href="#nosotros" class="menu-link" onclick="closeMenu()">Nosotros</a></li>
+            <li><a href="#servicios" class="menu-link" onclick="closeMenu()">Servicios</a></li>
+            <li><a href="#contacto" class="menu-link" onclick="closeMenu()">Contacto</a></li>
         </ul>
-    </nav>
+    </nav>    
+</div>
     <!-- Fin Menu Hamburguesa-->
     <!--Menu PC-->
+<!--Contenedor Logo + Menu PC-->
+<div class="contenedor-logo-menu-pc">
+    <a href="index.html"><img class="logo-menu-pc" src="img/Logo_impulsa_menu_web.svg" alt="logo_impulsa_agencia_de_markrting_digital"></a>    
     <div class="menu-pc">
         <ul>
             <li><a href="index.html" class="menu-link">Inicio</a></li>
@@ -91,11 +96,6 @@
 </div>
     <!--Fin contenedor Logo + Menu-->
 </header>
-<section class="contenedor-video">
-    <video src="video/video_impulsa_portada_1920x500.mp4" autoplay loop muted></video>
-</section>
-
-
 
 <!--Script-->
 <script src="js/main.js"></script>
