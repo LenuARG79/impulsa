@@ -12,11 +12,10 @@
 }
 
 body {
-    background-color: #211f3c;
+    background-color: #211f3c !important;
 }
 
 header {
-    background-color:#211f3c;
     width: 100%;
     height: auto;
 }
@@ -114,7 +113,7 @@ header {
 
 #menu {
     position: fixed;
-    top: 14vh;
+    top: 12vh;
     left: -100%;
     width: 100%;
     height: 100%;
@@ -182,10 +181,16 @@ header {
     width: 100%;
 }
 
-.menu-pc ul li a.active {
-    color: #e16f11;
+.menu-link.active {
+    color: #e16f11; /* Color naranja */
     font-weight: bold;
 }
+
+.menu-link.active::after {
+    width: 100%; /* Subrayado para el menú PC */
+    background-color: #e16f11;
+}
+
 
 .menu-pc li {
     padding: 3%;
@@ -199,6 +204,60 @@ header {
     font-family: "Arial";
     font-weight: bolder;
 }
+/* Fin menu PC */
+
+/*Main*/
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor-main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
+    background-color: #302d54;
+    width: 90%;
+    height: auto; 
+    margin-top: 30px;
+    border-radius: 35px;
+}
+.h1-main {
+    color: white;
+    font-size: clamp(50px,10vw, 80px);
+    text-align: left;
+    max-width: 300px;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.h1-span {
+    color: #e16f11;
+    font-weight: bolder;
+}
+.h3-main {
+    color: white;
+    margin-left: 5%;
+    margin-top: 5%;
+    text-align: left;
+    font-size: clamp(22px, 4vw, 35px);
+    max-width: 400px;
+}
+.img-main {
+    width: auto;
+    height: 480px;
+    /*margin-left: 10%;
+    margin-right: 2%;*/
+    margin-top: 2%;
+}
+.img-main-2 {
+    width: auto;
+    height: 516px;
+    /*margin-left: 10%;*/
+    margin-right: 2%;
+    margin-top: 2%;
+}
+
 
 
 @media (min-width:320px) and (max-width:767px){
@@ -257,7 +316,7 @@ header {
 
 #menu ul li a:hover,
 #menu ul li a:focus {
-    color: lightgray;
+    color: white;
 }
 
 /* Estilo para el enlace activo */
@@ -270,6 +329,30 @@ header {
 #menu ul li a.active::after {
     width: 100%;
     background-color: #e16f11;
+}
+
+.contenedor-main {
+    display: flex;
+    justify-content: center;
+}
+
+.h1-main {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 5%;
+    max-width: 400px;
+}
+
+.h3-main {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 5%;
+}
+
+.img-main {
+    display: none;
 }
 
 }
