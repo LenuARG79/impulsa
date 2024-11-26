@@ -216,7 +216,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 5px;
+    /*gap: 5px;*/
     background-color: #302d54;
     width: 90%;
     height: auto; 
@@ -339,14 +339,15 @@ header {
 .h1-main {
     text-align: center;
     margin-left: 0;
-    margin-top: 0;
+    margin-top: 1%;
     margin-bottom: 5%;
     max-width: 400px;
 }
 
 .h3-main {
     text-align: center;
-    margin-left: 0;
+    margin-left: 1%;
+    margin-right: 1%;
     margin-top: 0;
     margin-bottom: 5%;
 }
