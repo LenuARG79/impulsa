@@ -19,6 +19,20 @@ function closeMenu() {
     hamburger.classList.remove('active');
 }
 
+document.querySelectorAll('.menu-item').forEach(item => {
+    item.addEventListener('click', function (event) {
+        event.preventDefault(); // Evita la redirección inmediata
+
+        const targetURL = this.href; // Obtén la URL del enlace
+        
+        // Espera que la animación del subrayado se complete (ajusta el tiempo si es necesario)
+        setTimeout(() => {
+            window.location.href = targetURL; // Redirige a la página deseada
+        }, 500); // Duración de la animación del subrayado
+    });
+});
+
+
 // Detectar el enlace activo
 document.addEventListener("DOMContentLoaded", () => {
     const currentPath = window.location.pathname;
