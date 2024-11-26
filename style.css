@@ -8,38 +8,46 @@ body {
     background-color: #211f3c !important;
 }
 
+/* Whatsapp */
+.whatsapp-tab {
+    position: fixed;
+    top: 50%; /* A media página */
+    transform: translateY(-50%); /* Centrar verticalmente */
+    right: -50px; /* Ocultar parcialmente fuera de la pantalla */
+    width: 70px;
+    height: 80px;
+    background-color: #25d366; /* Color típico de WhatsApp */
+    border-color: #25d366;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*font-weight: bold;*/
+    font-size: 16px;
+    border-radius: 10px 0 0 10px;
+    cursor: pointer;
+    transition: right 0.3s ease; /* Efecto de deslizamiento */
+    writing-mode: vertical-rl; /* Hace que el texto sea vertical */
+    text-orientation: mixed; /* Asegura que las letras estén en su posición normal */
+    text-align: left;
+}
+
+.whatsapp-tab:hover {
+    right: 0; /* Deslizar hacia afuera */
+}
+
+/* Agregar sombra al texto */
+.whatsapp-tab span {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Fin Whatsapp */
+
 header {
     width: 100%;
     height: auto;
 }
 
-/*widget
-.contenedor-widget {
-    width: 100%;
-    height: 8vh;
-    padding-top: 1.5vh;
-    padding-left: 1.2vw;
-    padding-right: 1.2vw;
-    display: flex;
-    flex-direction: row;
-    gap: 0.5vw;
-    justify-content: space-between;
-    background-color: white;
-}
-
-.contenedor-widget-contacto {
-    display: flex;
-    gap: 3vw;
-    margin-right: 2vw;
-    align-items: center;
-}
-
-.contenedor-widget-contacto a {
-    font-size: 18px;
-    text-align: center;
-    align-items: center;
-}
-*/ 
 /*Contenedor Logo + Menu*/
 .contenedor-logo-menu {
     visibility: hidden;
@@ -120,8 +128,6 @@ header {
 }
 
 #menu ul li {
-    /*margin: 20px 0;*/
-    /*border-bottom: 1px solid lightgray;*/
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -130,12 +136,12 @@ header {
     text-decoration: none;
     color: white;
     font-family: "Poppins";
-    font-size: clamp(14px, 2vw, 18px);
+    font-size: clamp(16px, 2vw, 20px);
     transition: color 0.3s;
 }
 
 #menu ul li a:hover {
-    color: lightgray;
+    color: #e16f11 !important;
 }
 /* Fin Menu Hamburguesa */
 /*  Menu PC*/
@@ -182,10 +188,8 @@ header {
     text-decoration: none;
     color: white;
     font-family: "Poppins";
-    /*font-weight: bolder;*/
 }
-
-#active {
+.menu-pc li a:hover {
     color: #e16f11;
 }
 
@@ -234,19 +238,80 @@ header {
 .img-main {
     width: auto;
     height: 480px;
-    /*margin-left: 10%;
-    margin-right: 2%;*/
     margin-top: 2%;
 }
+
 .img-main-2 {
     width: auto;
     height: 516px;
-    /*margin-left: 10%;*/
     margin-right: 2%;
     margin-top: 2%;
 }
 
+/* Contenedor Redes */
+.contenedor-redes {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: auto;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+.redes {
+    font-size: 25px;
+}
 
+
+@media (min-width:768px) and (max-width:1024px){
+    .contenedor-logo-menu-pc {
+        visibility: hidden;
+        display: none;
+    }
+
+    .contenedor-logo-menu {
+        display: flex;
+        visibility: visible;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 70px;
+    }    
+
+     .menu-mobil {
+        visibility: visible;
+        margin-right: 5%;
+        padding-top: 1%;
+    }
+
+    .logo-menu-mobil {
+        width: 130px;
+        margin-left: 20%;
+        margin-top: 10%;
+    }
+        
+    .h1-main {
+        text-align: center;
+        max-width: 980px;
+    }
+    .h3-main {
+        text-align: center;
+        max-width: 980px;
+    }
+    .contenedor-redes {
+        display: flex;
+        justify-content: space-between;
+        width: 980px;
+        height: auto;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-bottom: 5%;
+    }
+    .redes {
+        font-size: 24px;
+        
+    }
+}
 
 @media (min-width:320px) and (max-width:767px){
     .contenedor-logo-menu-pc {
@@ -302,8 +367,8 @@ header {
     width: 100%;
 }
 
-#active {
-    color: #e16f11;
+.active {
+    color: #e16f11 !important;
 }
 
 #menu ul li a:hover,
@@ -322,7 +387,7 @@ header {
     margin-left: 0;
     margin-top: 1%;
     margin-bottom: 5%;
-    max-width: 500px;
+    max-width: 700px;
 }
 
 .h3-main {
@@ -336,5 +401,18 @@ header {
 .img-main {
     display: none;
 }
+/* Contenedor Redes */
 
+.contenedor-redes {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: auto;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+.redes {
+    font-size: 22px;
+}
 }

@@ -32,6 +32,12 @@ document.querySelectorAll('.menu-item').forEach(item => {
     });
 });
 
+document.querySelector('.whatsapp-tab').addEventListener('click', function () {
+    alert('Abriendo WhatsApp...'); // Aquí puedes integrar un enlace o acción personalizada.
+    // Ejemplo: Redirigir a un enlace de WhatsApp
+    window.open('https://wa.me/1234567890', '_blank'); // Reemplaza el número con tu número de WhatsApp.
+});
+
 
 // Detectar el enlace activo
 document.addEventListener("DOMContentLoaded", () => {
