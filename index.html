@@ -39,8 +39,13 @@
     <meta name="twitter:description" content="Potenciamos tu marca con estrategias de marketing digital creativas y efectivas.">
     <meta name="twitter:image" content="[URL de tu imagen de vista previa]">
     
+    <!-- Letra Popins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <!-- Favicon -->
-    <link rel="icon" href="/img/Logo_Impulsa_favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/Logo_Impulsa_favicon_web.ico" type="image/x-icon">
 </head>
 <body>
 <header>
@@ -61,7 +66,7 @@
 
     <!--Contenedor Logo + Menu-->
     <div class="contenedor-logo-menu">
-    <a href="index.html"><img class="logo-menu-mobil" src="img/Logo_impulsa_menu_web.svg" alt="logo_impulsa_agencia_de_markrting_digital"></a> 
+    <a href="index.html"><img class="logo-menu-mobil" src="img/Logo_Impulsa.svg" alt="logo_impulsa_agencia_de_markrting_digital"></a> 
     <!--Menu Hamburguesa-->
     <div class="menu-mobil">  
         <div class="hamburger" id="hamburger" onclick="toggleMenu()">
@@ -73,7 +78,7 @@
     <!--Menu Mobil-->  
     <nav id="menu">
         <ul>
-            <li><a href="index.html" class="menu-link" onclick="closeMenu()">Inicio</a></li>
+            <li><a href="index.html" class="menu-link" id="active" onclick="closeMenu()">Inicio</a></li>
             <li><a href="#nosotros" class="menu-link" onclick="closeMenu()">Nosotros</a></li>
             <li><a href="#servicios" class="menu-link" onclick="closeMenu()">Servicios</a></li>
             <li><a href="#contacto" class="menu-link" onclick="closeMenu()">Contacto</a></li>
@@ -84,10 +89,10 @@
     <!--Menu PC-->
 <!--Contenedor Logo + Menu PC-->
 <div class="contenedor-logo-menu-pc">
-    <a href="index.html"><img class="logo-menu-pc" src="img/Logo_impulsa_menu_web.svg" alt="logo_impulsa_agencia_de_markrting_digital"></a>    
+    <a href="index.html"><img class="logo-menu-pc" src="img/Logo_Impulsa.svg" alt="logo_impulsa_agencia_de_markrting_digital"></a>    
     <div class="menu-pc">
         <ul>
-            <li><a href="index.html" class="menu-link">Inicio</a></li>
+            <li><a href="index.html" class="menu-link" id="active" >Inicio</a></li>
             <li><a href="#nosotros" class="menu-link">Nosotros</a></li>
             <li><a href="#servicios" class="menu-link">Servicios</a></li>
             <li><a href="#contacto" class="menu-link">Contacto</a></li>

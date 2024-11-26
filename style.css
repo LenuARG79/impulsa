@@ -4,13 +4,6 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: "Genty";
-    src: url(Fuente/GentyDemo-Regular.ttf);
-    font-weight: normal;
-    font-style: normal;
-}
-
 body {
     background-color: #211f3c !important;
 }
@@ -58,14 +51,13 @@ header {
     justify-content: space-between;
     width: 100%;
     height: 70px;
-    /*margin-top: 0.5%;
-    padding-bottom: 1%;*/
 }
 
 .logo-menu-pc {
-    width: 120px;
+    width: 170px;
     height: auto;
-    margin-left: 15px;
+    margin-left: 50%;
+    margin-top: 10%;
 }
 
 .menu-pc {
@@ -137,7 +129,7 @@ header {
 #menu ul li a {
     text-decoration: none;
     color: white;
-    font-family: "Arial";
+    font-family: "Poppins";
     font-size: clamp(14px, 2vw, 18px);
     transition: color 0.3s;
 }
@@ -159,7 +151,7 @@ header {
 .menu-link {
     text-decoration: none;
     color: #303030;
-    font-family: "Arial", sans-serif;
+    font-family: "Poppins";
     font-weight: bold;
     position: relative;
     padding-bottom: 5px;
@@ -181,29 +173,22 @@ header {
     width: 100%;
 }
 
-.menu-link.active {
-    color: #e16f11; /* Color naranja */
-    font-weight: bold;
-}
-
-.menu-link.active::after {
-    width: 100%; /* Subrayado para el menú PC */
-    background-color: #e16f11;
-}
-
-
 .menu-pc li {
-    padding: 3%;
-    margin-right: 5%;
+    margin-right: 25%;
     position: relative;
 }
 
 .menu-pc li a{
     text-decoration: none;
     color: white;
-    font-family: "Arial";
-    font-weight: bolder;
+    font-family: "Poppins";
+    /*font-weight: bolder;*/
 }
+
+#active {
+    color: #e16f11;
+}
+
 /* Fin menu PC */
 
 /*Main*/
@@ -224,7 +209,8 @@ header {
     border-radius: 35px;
 }
 .h1-main {
-    color: white;
+    color:#ffde00;
+    font-family: "Poppins";
     font-size: clamp(50px,10vw, 80px);
     text-align: left;
     max-width: 300px;
@@ -233,6 +219,7 @@ header {
 }
 .h1-span {
     color: #e16f11;
+    font-family: "Poppins";
     font-weight: bolder;
 }
 .h3-main {
@@ -240,8 +227,9 @@ header {
     margin-left: 5%;
     margin-top: 5%;
     text-align: left;
-    font-size: clamp(22px, 4vw, 35px);
-    max-width: 400px;
+    font-family: "Poppins";
+    font-size: clamp(22px, 4vw, 32px);
+    max-width: 600px;
 }
 .img-main {
     width: auto;
@@ -276,22 +264,22 @@ header {
     }    
 
     .menu-mobil {
-    visibility: visible;
-    margin-right: 5%;
-    padding-top: 1%;
+        visibility: visible;
+        margin-right: 5%;
+        padding-top: 1%;
     }
 
     .logo-menu-mobil {
-        width: 100px;
+        width: 130px;
         margin-left: 15%;
-        margin-top: 5%;
+        margin-top: 10%;
     }
 
     /* Estilo para los enlaces del menú móvil */
 #menu ul li a {
     text-decoration: none;
     color: white;
-    font-family: "Arial";
+    font-family: "Poppins";
     font-size: clamp(14px, 2vw, 18px);
     transition: color 0.3s, background-color 0.3s ease-in-out;
     position: relative;
@@ -314,21 +302,13 @@ header {
     width: 100%;
 }
 
+#active {
+    color: #e16f11;
+}
+
 #menu ul li a:hover,
 #menu ul li a:focus {
     color: white;
-}
-
-/* Estilo para el enlace activo */
-#menu ul li a.active,
-.menu-pc ul li a.active {
-    color: #e16f11;
-    font-weight: bold;
-}
-
-#menu ul li a.active::after {
-    width: 100%;
-    background-color: #e16f11;
 }
 
 .contenedor-main {
@@ -338,10 +318,11 @@ header {
 
 .h1-main {
     text-align: center;
+    color: #ffde00;
     margin-left: 0;
     margin-top: 1%;
     margin-bottom: 5%;
-    max-width: 400px;
+    max-width: 500px;
 }
 
 .h3-main {
