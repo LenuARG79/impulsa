@@ -367,7 +367,7 @@ header {
     }    
     #menu {
         position: fixed;
-        top: 16vh; 
+        top: 18vh; 
     }
         
     .menu-mobil {
@@ -416,7 +416,7 @@ header {
 @media (min-width:320px) and (max-width:767px){
     #menu {
         position: fixed;
-        top: 16vh; 
+        top: 15vh; 
     }
         
     .contenedor-logo-menu-pc {
