@@ -38,15 +38,22 @@ document.querySelector('.whatsapp-tab').addEventListener('click', function () {
     window.open('https://wa.me/1234567890', '_blank'); // Reemplaza el número con tu número de WhatsApp.
 });
 
-
-// Detectar el enlace activo
 document.addEventListener("DOMContentLoaded", () => {
-    const currentPath = window.location.pathname;
-    const menuLinks = document.querySelectorAll("a.menu-link");
+    const cards = document.querySelectorAll(".card-herramientas");
 
-    menuLinks.forEach(link => {
-        if (link.getAttribute("href") === currentPath) {
-            link.classList.add("active");
-        }
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    }, {
+        threshold: 0.1 // 10% del elemento visible para activarse
     });
+
+    cards.forEach(card => observer.observe(card));
+});
+cards.forEach((card, index) => {
+    observer.observe(card);
+    card.style.transitionDelay = `${index * 0.2}s`; // 0.2s de diferencia entre tarjetas
 });
