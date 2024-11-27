@@ -9,37 +9,37 @@ body {
 }
 
 /* Whatsapp */
-.whatsapp-tab {
+/*.whatsapp-tab {
     position: fixed;
     top: 50%; /* A media página */
-    transform: translateY(-50%); /* Centrar verticalmente */
-    right: -50px; /* Ocultar parcialmente fuera de la pantalla */
-    width: 70px;
-    height: 80px;
-    background-color: #25d366; /* Color típico de WhatsApp */
-    border-color: #25d366;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /*transform: translateY(-50%); /* Centrar verticalmente */
+    /*right: -50px; /* Ocultar parcialmente fuera de la pantalla */
+    /*width: 70px;
+    /*height: 80px;
+    /*background-color: #25d366; /* Color típico de WhatsApp */
+    /*border-color: #25d366;
+    /*color: white;
+    /*display: flex;
+    /*align-items: center;
+    /*justify-content: center;
     /*font-weight: bold;*/
-    font-size: 16px;
-    border-radius: 10px 0 0 10px;
-    cursor: pointer;
+    /*font-size: 16px;
+    /*border-radius: 10px 0 0 10px;
+    /*cursor: pointer;
     transition: right 0.3s ease; /* Efecto de deslizamiento */
-    writing-mode: vertical-rl; /* Hace que el texto sea vertical */
-    text-orientation: mixed; /* Asegura que las letras estén en su posición normal */
-    text-align: left;
-}
+   /* writing-mode: vertical-rl; /* Hace que el texto sea vertical */
+    /*text-orientation: mixed; /* Asegura que las letras estén en su posición normal */
+    /*text-align: left;
+}*/
 
-.whatsapp-tab:hover {
+/*.whatsapp-tab:hover {
     right: 0; /* Deslizar hacia afuera */
-}
+/*}*/
 
 /* Agregar sombra al texto */
-.whatsapp-tab span {
+/*.whatsapp-tab span {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
+}/*
 
 /* Fin Whatsapp */
 
@@ -154,6 +154,10 @@ header {
     justify-content: end;
 }
 
+.active {
+    color: #e16f11 !important;
+}
+
 .menu-link {
     text-decoration: none;
     color: #303030;
@@ -262,6 +266,90 @@ header {
     font-size: 25px;
 }
 
+/* Herramientas */
+.seccion-herramientas {
+    margin-top: 5%;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+}
+
+.h3-herramientas {
+    color: #ffde00;
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size: clamp(18px, 6vw, 28px);
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 35px;
+}
+
+.span-herramientas {
+    color: #e16f11;
+    font-family: "Poppins";
+    font-weight: bold;
+}
+
+.p-herramientas {
+    margin-top: 10px;
+    color: white;
+    font-family: "Poppins";
+    font-size: clamp(14px, 3vw, 18px);
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 55px;
+    
+}
+
+.contenedor-herramientas {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card-herramientas {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+    width: 300px;
+    height: 320px;
+    border: solid 1px #ffde00;
+    border-radius: 15px;
+}
+
+.p-card-herramientas {
+    color: #e16f11;
+    font-family: "Poppins";
+    font-size: 36px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.h4-card-herramientas {
+    color: #ffde00;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.p2-card-herramientas {
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 10%;
+    font-size: clamp(18px, 4vw, 20px);
+}
+
+.card-herramientas:hover {
+    background-color: #302d54;
+}
 
 @media (min-width:768px) and (max-width:1024px){
     .contenedor-logo-menu-pc {
@@ -277,11 +365,19 @@ header {
         width: 100%;
         height: 70px;
     }    
-
-     .menu-mobil {
+    #menu {
+        position: fixed;
+        top: 13vh; 
+    }
+        
+    .menu-mobil {
         visibility: visible;
         margin-right: 5%;
         padding-top: 1%;
+    }
+
+    .active {
+        color: #e16f11 !important;
     }
 
     .logo-menu-mobil {
@@ -307,9 +403,13 @@ header {
         margin-left: 5%;
         margin-bottom: 5%;
     }
+
     .redes {
         font-size: 24px;
         
+    }
+    .seccion-herramientas {
+        margin-top: 8%;
     }
 }
 
@@ -414,5 +514,8 @@ header {
 }
 .redes {
     font-size: 22px;
+}
+.seccion-herramientas {
+    margin-top: 15%;
 }
 }
