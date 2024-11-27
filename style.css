@@ -367,7 +367,7 @@ header {
     }    
     #menu {
         position: fixed;
-        top: 13vh; 
+        top: 16vh; 
     }
         
     .menu-mobil {
@@ -414,6 +414,11 @@ header {
 }
 
 @media (min-width:320px) and (max-width:767px){
+    #menu {
+        position: fixed;
+        top: 16vh; 
+    }
+        
     .contenedor-logo-menu-pc {
         visibility: hidden;
         display: none;
