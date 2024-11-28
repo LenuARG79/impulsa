@@ -316,7 +316,7 @@ header {
     justify-content: start;
     gap: 10px;
     width: 300px;
-    height: 320px;
+    height: 330px;
     border: solid 1px #ffde00;
     border-radius: 15px;
     opacity: 0;
@@ -383,16 +383,82 @@ header {
     color: #e16f11;
 }
 
-/*Seccion Mision */
-.seccion-mision {
-    margin-top: 5%;
-    width: 90%;
-    height: auto;
-    margin-bottom: 5%;
-    color: #302d54;
+/*Seccion Valores */
+
+.seccion-valores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.contenedor-valores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5%;
+    width: 90%;
+    border-radius: 35px;
+    height: auto;
+    padding-top: 5%;
+    margin-bottom: 5%;
+    background-color: #302d54;
+}
 
+.h4-valores {
+    font-family: "Poppins";
+    color: #ffde00;
+    font-size: clamp(18px, 6vw, 28px);
+    font-weight: bold;
+    text-align: center;
+    height: auto;
+}
+
+.span-valores {
+    color: #e16f11;
+}
+
+.p-valores {
+    margin-top: 10px;
+    color: white;
+    font-family: "Poppins";
+    font-size: clamp(15px, 3vw, 18px);
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 55px;
+}
+
+.mision {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 330px;
+    border: solid 1px #ffde00;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+ }
+
+.h4-mision {
+    color: #ffde00;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    font-family: "Poppins";
+}
+
+.p-valores-mision {
+    color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 10%;
+    font-size: clamp(18px, 4vw, 20px);
+}
 
 @media (min-width:768px) and (max-width:1024px){
     .contenedor-logo-menu-pc {
