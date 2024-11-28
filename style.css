@@ -428,18 +428,16 @@ header {
     margin-bottom: 55px;
 }
 
-.mision {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    height: 330px;
-    border: solid 1px #ffde00;
-    border-radius: 15px;
-    margin-bottom: 15px;
+#mision {
+    justify-content: center !important;
+    align-items: center !important;
+    width: auto;
+    height: 330px !important;
+    
+    
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 5%;
  }
 
 .h4-mision {
