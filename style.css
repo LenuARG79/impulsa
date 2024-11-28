@@ -432,9 +432,7 @@ header {
     justify-content: center !important;
     align-items: center !important;
     width: auto;
-    height: 330px !important;
-    
-    
+    height: 330px !important;    
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 5%;
@@ -457,6 +455,62 @@ header {
     margin-bottom: 10%;
     font-size: clamp(18px, 4vw, 20px);
 }
+
+.seccion-eleccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-eleccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    border-radius: 35px;
+    height: auto;
+}
+
+#eleccion {
+    display: flex; /* Habilita flexbox */
+    align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
+    gap: 16px; /* Espaciado entre el ícono y el texto */
+    width: auto;
+    height: 200px !important;    
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    border: none;
+    background-color: #302d54;
+}
+
+.h5-eleccion {
+    margin: 0;
+    color: #ffde00;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 50px;
+}
+
+.p-eleccion {
+    font-family: "Poppins";
+    color: white !important;
+    font-size: 16px;
+    text-align: right;
+}
+
+.i-eleccion {
+    margin-left: 15px; /* Mueve el ícono al extremo derecho */
+    font-size: 36px; /* Ajusta el tamaño del ícono */
+}
+.fa-globe {
+    color: #e16f11;
+}
+
+
 
 @media (min-width:768px) and (max-width:1024px){
     .contenedor-logo-menu-pc {
