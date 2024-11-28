@@ -461,27 +461,27 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: auto;
 }
 
 .contenedor-eleccion {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    border-radius: 35px;
+    gap: 15px;
     height: auto;
 }
 
-#eleccion {
-    display: flex; /* Habilita flexbox */
+.card-eleccion {
+    display: flex; 
     align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
     gap: 16px; /* Espaciado entre el ícono y el texto */
-    width: auto;
-    height: 200px !important;    
+    flex-wrap: wrap;
+    width: 50%;
+    height: 250px;    
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 5%;
-    border: none;
+    border: 1px solid #e16f11;
     background-color: #302d54;
 }
 
@@ -489,9 +489,8 @@ header {
     margin: 0;
     color: #ffde00;
     font-family: "Poppins";
-    font-size: 18px;
-    font-weight: bold;
-    text-align: right;
+    font-size: clamp(16px, 6vw, 20px);
+    text-align: center;
     margin-right: 50px;
 }
 
@@ -503,8 +502,10 @@ header {
 }
 
 .i-eleccion {
-    margin-left: 15px; /* Mueve el ícono al extremo derecho */
-    font-size: 36px; /* Ajusta el tamaño del ícono */
+    margin-left: 15px;
+    text-align: center;
+    justify-items: center;
+    font-size: clamp(40px, 10vw, 50px);
 }
 .fa-globe {
     color: #e16f11;
