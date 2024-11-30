@@ -456,47 +456,89 @@ header {
     font-size: clamp(18px, 4vw, 20px);
 }
 
+/* Seccion Por que elegirnos */
 .seccion-eleccion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 100%;
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.contenedor-eleccion {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card-eleccion {
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+#borde-eleccion-1 {
+    border: 2px solid #00B64F
+}
+
+#borde-eleccion-2 {
+    border: 2px double #8c52ff;
+}
+
+#borde-eleccion-3 {
+    border: 2px double #ff66c4;
+}
+
+.contenedor-img-eleccion {
+    width: 20%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-eleccion {
+    width: 80%;
     height: auto;
 }
 
-  .card-eleccion {
-    flex-direction: row;
-    align-items: flex-start;
-    text-align: left;
-  }
+.img-eleccion {
+    width: 40px;
+}
 
-  .img-container {
-    width: 50%; /* Imagen ocupa la mitad del espacio */
-  }
-
-  .texto-eleccion {
-    width: 50%; /* Texto ocupa la otra mitad */
-    padding-left: 20px; /* Espaciado entre imagen y texto */
-  }
-
-  .img-eleccion {
-    width: 100%; /* Imagen se ajusta al ancho del contenedor */
-  }
-
-.h5-eleccion {
-    margin: 0;
-    color: #ffde00;
+.h5-eleccion-1 {
+    color: #00B64F;
     font-family: "Poppins";
-    font-size: clamp(14px, 6vw, 18px);
     text-align: center;
+    margin-top:10px ;
+    padding-right: 10px;
+}
+
+.h5-eleccion-2 {
+    color: #8c52ff;
+    font-family: "Poppins";
+    text-align: center;
+    margin-top:10px ;
+    padding-right: 10px;
+}
+
+.h5-eleccion-3 {
+    color: #ff66c4;
+    font-family: "Poppins";
+    text-align: center;
+    margin-top:10px ;
+    padding-right: 10px;
 }
 
 .p-eleccion {
-    font-family: "Poppins";
-    color: white !important;
-    font-size: clamp(18px, 4vw, 20px);
+    color: white;
+    padding-right: 10px;
     text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10%;
+    font-size: clamp(18px, 4vw, 20px);
 }
 
 @media (min-width:768px) and (max-width:1024px){
@@ -559,25 +601,6 @@ header {
     .seccion-herramientas {
         margin-top: 8%;
     }
-    
-    .card-eleccion {
-        flex-direction: row; /* Imagen y texto en una sola línea */
-        align-items: flex-start;
-        text-align: left;
-      }
-    
-      .img-container {
-        width: 50%; /* Imagen ocupa la mitad del espacio */
-      }
-    
-      .texto-eleccion {
-        width: 50%; /* Texto ocupa la otra mitad */
-        padding-left: 20px; /* Espaciado entre imagen y texto */
-      }
-    
-      .img-eleccion {
-        width: 100%; /* Imagen se ajusta al ancho del contenedor */
-      }
 }
 
 @media (min-width:320px) and (max-width:767px){
@@ -689,34 +712,5 @@ header {
 }
     .seccion-herramientas {
         margin-top: 15%;
-}
-    .card-eleccion {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 80%;
-        border: 1px solid #00B64F;
-        border-radius: 15px;
-}
-    .img-container {
-        width: 50%;
-        align-items: center;
-        justify-items: center;
-}
-  
-    .img-eleccion {
-        width: 40px;
-        height: auto;
-        margin-bottom: 10px;
-}
-    .texto-eleccion {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        width: 100%;
-        height: auto;
 }
 }
