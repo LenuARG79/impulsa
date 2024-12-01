@@ -66,7 +66,7 @@ form.addEventListener("submit", async (e) => {
     });
 
     try {
-        const response = await fetch("https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec", {
+        const response = await fetch("https://script.google.com/macros/s/AKfycbxcRHgL9-eVkG9xqD3zbkGqL-2ssdTY7GQXWXRu-YJs7SOj_af9BHyJy0uBLH_zHjty5Q/exec", {
             method: "POST",
             body: JSON.stringify(data),
             headers: {
