@@ -55,15 +55,12 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const form = document.getElementById("contactForm");
-
 form.addEventListener("submit", async (e) => {
-    e.preventDefault(); // Previene el comportamiento por defecto del formulario
+    e.preventDefault();
 
     const formData = new FormData(form);
     const data = {};
-    formData.forEach((value, key) => {
-        data[key] = value;
-    });
+    formData.forEach((value, key) => (data[key] = value));
 
     try {
         const response = await fetch("https://script.google.com/macros/s/AKfycbxcRHgL9-eVkG9xqD3zbkGqL-2ssdTY7GQXWXRu-YJs7SOj_af9BHyJy0uBLH_zHjty5Q/exec", {
