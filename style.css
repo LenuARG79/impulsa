@@ -425,18 +425,18 @@ header {
     text-align: center;
     margin-left: 15px;
     margin-right: 15px;
-    margin-bottom: 55px;
+    margin-bottom: 15px;
 }
 
 #mision {
     justify-content: center !important;
     align-items: center !important;
-    width: auto;
-    height: 330px !important;    
+    width: 90%;
+    height: auto !important;    
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 5%;
- }
+}
 
 .h4-mision {
     color: #ffde00;
@@ -463,25 +463,31 @@ header {
     margin-top: 5%;
     margin-bottom: 5%;
 }
-.contenedor-eleccion {
+
+.contenedor-eleccion-general {
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
     width: 100%;
     height: auto;
-    justify-content: space-between;
-    gap: 10px;
-    margin: 0 auto;
+}
+
+.contenedor-eleccion {
+    display: flex;
+    height: auto;
 }
 
 .card-eleccion {
     display: flex;
     flex-direction: row;
-    flex: 1 1 calc(45%-10px);
-    box-sizing: border-box;
-    width: 45%;
-    height: auto;
+    width: 600px;
+    height: 200px;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
+    max-width: 640px;
 }
 
 #borde-eleccion-1 {
@@ -504,7 +510,6 @@ header {
 #borde-eleccion-6 {
     border: 2px double #ff005c;
 }
-
 
 .contenedor-img-eleccion {
     width: 20%;
@@ -580,6 +585,59 @@ header {
     font-size: clamp(18px, 4vw, 20px);
 }
 
+/* Seccion Reseñas */
+.seccion-resenas {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-resenas {
+    width: 90%;
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #302d54;
+    border-radius: 15px;
+    padding-top: 15px;
+}
+.card-resenas {
+    width: auto;
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.img-card-resenas {
+    width: 60px;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.estrellas-resenas {
+    width: 100px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.nombre-resenas {
+    color: #e16f11;
+    margin-left: 10px;
+}
+
+.h5-resenas {
+    font-family: "Poppins";
+    font-size: clamp(14px, 2vw 18px) !important;
+    color: #ffde00;
+    margin-left: 10px;
+}
+
+.p-resenas {
+    color: white;
+    font-size: clamp(12px, 2vw 16px);
+    margin-left: 10px;
+}
+
 @media (min-width:768px) and (max-width:1024px){
     .contenedor-logo-menu-pc {
         visibility: hidden;
@@ -640,6 +698,7 @@ header {
     .seccion-herramientas {
         margin-top: 8%;
     }
+
     .card-eleccion {
         flex-direction: row;
         width: 100%;
