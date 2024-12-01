@@ -54,30 +54,39 @@ document.addEventListener("DOMContentLoaded", () => {
     cards.forEach(card => observer.observe(card));
 });
 
-const form = document.getElementById("contactForm");
-form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-
-    const formData = new FormData(form);
-    const data = {};
-    formData.forEach((value, key) => (data[key] = value));
-
-    try {
-        const response = await fetch("https://script.google.com/macros/s/AKfycbxcRHgL9-eVkG9xqD3zbkGqL-2ssdTY7GQXWXRu-YJs7SOj_af9BHyJy0uBLH_zHjty5Q/exec", {
-            method: "POST",
-            body: JSON.stringify(data),
-            headers: {
-                "Content-Type": "application/json",
-            },
-        });
-
-        if (response.ok) {
-            alert("Tu mensaje se envió con éxito.");
-            form.reset();
-        } else {
-            alert("Ocurrió un error. Intenta nuevamente.");
-        }
-    } catch (error) {
-        alert("Error al enviar el formulario. Revisa tu conexión.");
-    }
-});
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evitar el comportamiento por defecto (enviar el formulario)
+  
+    var name = document.getElementById('name').value;
+    var phone = document.getElementById('phone').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+  
+    var scriptUrl = 'https://script.google.com/macros/s/AKfycbwfY8HQeL8NaZKsm1mEs49q8kgVtRXueX1v70z6c7wfzSNTQi_RQDqfA93EUNPg3JVE0A/exec'; // Asegúrate de usar la URL correcta
+  
+    var formData = {
+      name: name,
+      phone: phone,
+      email: email,
+      message: message
+    };
+  
+    // Usar el método POST con los datos JSON correctamente formateados
+    fetch(scriptUrl, {
+      method: 'POST',
+      body: JSON.stringify(formData),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+    .then(response => response.json())
+    .then(data => {
+      alert('Formulario enviado con éxito.');
+      document.getElementById('contactForm').reset(); // Resetear el formulario
+    })
+    .catch(error => {
+      console.error('Error al enviar el formulario:', error);
+      alert('Hubo un error al enviar el formulario.');
+    });
+  });
+  

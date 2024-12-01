@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/23f35d7867.js" crossorigin="anonymous"></script>
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <title>Agencia de Marketing Digital Creativa - IMPULSA -</title>
+    <script src="titulo-animado.js" defer></script>
+    
+    <!-- Meta Descripción -->
+    <meta name="description" content="Descubre servicios de marketing digital creativos y efectivos. Potenciamos tu marca con estrategias de SEO, publicidad en redes sociales y más.">
+    
+    <!-- Meta Keywords -->
+    <meta name="keywords" content="agencia de marketing digital, marketing online, SEO, publicidad en redes sociales, marketing de contenidos, growth marketing">
+    
+    <!-- Meta Robots -->
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph (para compartir en redes sociales) -->
+    <meta property="og:title" content="Agencia de Marketing Digital Creativa - Impulsa">
+    <meta property="og:description" content="Potenciamos tu marca con estrategias de marketing digital, incluyendo SEO, publicidad y contenido innovador.">
+    <meta property="og:image" content="[URL de tu imagen de vista previa]">
+    <meta property="og:url" content="https://www.impulsa.net.ar">   
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card (para compartir en Twitter) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Agencia de Marketing Digital Creativa - [Nombre de tu agencia]">
+    <meta name="twitter:description" content="Potenciamos tu marca con estrategias de marketing digital creativas y efectivas.">
+    <meta name="twitter:image" content="[URL de tu imagen de vista previa]">
+    
+    <!-- Letra Popins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/Logo_Impulsa_favicon_web.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="whatsapp-tab">
+        <span>WhatsApp</span>
+    </div>
+<header>
+    <!--Contenedor Logo + Menu-->
+    <div class="contenedor-logo-menu">
+    <a href="index.html"><img class="logo-menu-mobil" src="img/Logo_Impulsa.svg" alt="logo_impulsa_agencia_de_markrting_digital"></a> 
+    <!--Menu Hamburguesa-->
+    <div class="menu-mobil">  
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        </div>
+    </div>
+    <!--Menu Mobil-->  
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html" class="menu-link" onclick="closeMenu()">Inicio</a></li>
+            <li><a href="#nosotros" class="menu-link" onclick="closeMenu()">Nosotros</a></li>
+            <li><a href="#servicios" class="menu-link" onclick="closeMenu()">Servicios</a></li>
+            <li><a href="contacto.html" class="menu-link active" onclick="closeMenu()">Contacto</a></li>
+        </ul>
+    </nav>    
+</div>
+    <!-- Fin Menu Hamburguesa-->
+    <!--Menu PC-->
+<!--Contenedor Logo + Menu PC-->
+<div class="contenedor-logo-menu-pc">
+    <a href="index.html"><img class="logo-menu-pc" src="img/Logo_Impulsa.svg" alt="logo_impulsa_agencia_de_markrting_digital"></a>    
+    <div class="menu-pc">
+        <ul>
+            <li><a href="index.html" class="menu-link" >Inicio</a></li>
+            <li><a href="#nosotros" class="menu-link">Nosotros</a></li>
+            <li><a href="#servicios" class="menu-link">Servicios</a></li>
+            <li><a href="contacto.html" class="menu-link active">Contacto</a></li>
+        </ul>    
+    </div>
+</div>
+<!--Formulario-->
+<h2>Formulario de Contacto</h2>
+    <form id="contactForm">
+        <label for="name">Nombre:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="phone">Teléfono:</label><br>
+        <input type="text" id="phone" name="phone" required><br><br>
+
+        <label for="email">Correo Electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Deja tu consulta:</label><br>
+        <textarea id="message" name="message" required></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+<!--Script-->
+<script src="js/main.js"></script>
+<!-- Fin Script-->
+<!-- Boostrap--> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+</script>
+<!-- Fin Boostrap-->
+
+</body>
+</html>
