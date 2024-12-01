@@ -57,3 +57,30 @@ cards.forEach((card, index) => {
     observer.observe(card);
     card.style.transitionDelay = `${index * 0.2}s`; // 0.2s de diferencia entre tarjetas
 });
+const form = document.getElementById("contactForm");
+    form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    const data = {};
+    formData.forEach((value, key) => (data[key] = value));
+
+    try {
+    const response = await fetch("Thttps://script.google.com/macros/s/AKfycbygcfJ8gJn4oEj34c8osnWqw3Jr1ieyyqt_a6o4OQWgWibGuJ9scd1pLbkrTYRPjgufiw/exec", {
+    method: "POST",
+    body: JSON.stringify(data),
+    headers: {
+            "Content-Type": "application/json",
+    },
+    });
+
+    if (response.ok) {
+    alert("Tu mensaje se envió con éxito.");
+    form.reset();
+    } else {
+    alert("Ocurrió un error. Intenta nuevamente.");
+    }
+    } catch (error) {
+    alert("Error al enviar el formulario. Revisa tu conexión.");
+    }
+    });

@@ -589,22 +589,36 @@ header {
 .seccion-resenas {
     display: flex;
     justify-content: center;
+    
 }
-
 .contenedor-resenas {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 15px;
     width: 90%;
     height: auto;
     margin-top: 5%;
     margin-bottom: 5%;
     background-color: #302d54;
-    border-radius: 15px;
-    padding-top: 15px;
+    border-radius: 35px;
 }
-.card-resenas {
-    width: auto;
+
+.h4-resenas {
+    font-family: "Poppins";
+    color: #ffde00;
+    font-size: clamp(18px, 6vw, 28px);
+    font-weight: bold;
+    text-align: center;
     height: auto;
     margin-top: 5%;
-    margin-bottom: 5%;
+}
+.card-resenas {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    height: auto;
+    
 }
 
 .img-card-resenas {
@@ -637,6 +651,58 @@ header {
     font-size: clamp(12px, 2vw 16px);
     margin-left: 10px;
 }
+
+.final-resenas {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+}
+
+/* Seccion Contacto */
+
+.contenedor-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.form-contacto {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto
+}
+
+form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+  }
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
 
 @media (min-width:768px) and (max-width:1024px){
     .contenedor-logo-menu-pc {
@@ -707,6 +773,8 @@ header {
         margin-right: 10px;
         margin-bottom: 10px;
 }
+
+
 }
 
 @media (min-width:320px) and (max-width:767px){
@@ -826,5 +894,9 @@ header {
         margin-left: 10px;
         margin-right: 10px;
         margin-bottom: 10px;
+}
+    .card-resenas {
+    width: 300px;
+    height: auto;
 }
 }
