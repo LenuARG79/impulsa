@@ -66,7 +66,7 @@ const form = document.getElementById("contactForm");
     formData.forEach((value, key) => (data[key] = value));
 
     try {
-    const response = await fetch("Thttps://script.google.com/macros/s/AKfycbygcfJ8gJn4oEj34c8osnWqw3Jr1ieyyqt_a6o4OQWgWibGuJ9scd1pLbkrTYRPjgufiw/exec", {
+    const response = await fetch("https://script.google.com/macros/s/AKfycbxcRHgL9-eVkG9xqD3zbkGqL-2ssdTY7GQXWXRu-YJs7SOj_af9BHyJy0uBLH_zHjty5Q/exec", {
     method: "POST",
     body: JSON.stringify(data),
     headers: {
