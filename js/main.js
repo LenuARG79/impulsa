@@ -33,10 +33,16 @@ document.querySelectorAll('.menu-item').forEach(item => {
 });
 
 document.querySelector('.whatsapp-tab').addEventListener('click', function () {
-    alert('Abriendo WhatsApp...'); // Aquí puedes integrar un enlace o acción personalizada.
-    // Ejemplo: Redirigir a un enlace de WhatsApp
-    window.open('https://wa.me/1234567890', '_blank'); // Reemplaza el número con tu número de WhatsApp.
+  alert('Abriendo WhatsApp...'); // Aquí puedes integrar un mensaje de alerta si lo deseas.
+
+  // Redirige a WhatsApp con el mensaje predefinido
+  const phoneNumber = '1151485804'; // Tu número de WhatsApp
+  const message = encodeURIComponent('Gracias por comunicarte con Impulsa, agencia de MKT Digital. En breve serás atendido.');
+  
+  // Redirigir al enlace de WhatsApp
+  window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank'); // Redirige al número de WhatsApp con el mensaje.
 });
+
 
 document.addEventListener("DOMContentLoaded", () => {
     const cards = document.querySelectorAll(".card-herramientas");
