@@ -670,6 +670,15 @@ header {
     margin-bottom: 5%;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+}
+#contactForm {
+    width: 50% !important;
+}
+
+
 input, textarea {
     margin-bottom: 10px !important;
 }
@@ -773,7 +782,10 @@ button:focus {
         margin-left: 10px;
         margin-right: 10px;
         margin-bottom: 10px;
-}
+    }
+    #contactForm {
+        width: 80% !important;
+    }
 
 
 }
@@ -900,4 +912,8 @@ button:focus {
     width: 300px;
     height: auto;
 }
+    #contactForm {
+    width: 80% !important;
+}
+
 }
