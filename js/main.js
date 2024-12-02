@@ -54,39 +54,51 @@ document.addEventListener("DOMContentLoaded", () => {
     cards.forEach(card => observer.observe(card));
 });
 
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Evitar el comportamiento por defecto (enviar el formulario)
-  
-    var name = document.getElementById('name').value;
-    var phone = document.getElementById('phone').value;
-    var email = document.getElementById('email').value;
-    var message = document.getElementById('message').value;
-  
-    var scriptUrl = 'https://script.google.com/macros/s/AKfycbwfY8HQeL8NaZKsm1mEs49q8kgVtRXueX1v70z6c7wfzSNTQi_RQDqfA93EUNPg3JVE0A/exec'; // Asegúrate de usar la URL correcta
-  
-    var formData = {
-      name: name,
-      phone: phone,
-      email: email,
-      message: message
-    };
-  
-    // Usar el método POST con los datos JSON correctamente formateados
-    fetch(scriptUrl, {
-      method: 'POST',
-      body: JSON.stringify(formData),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    })
-    .then(response => response.json())
-    .then(data => {
-      alert('Formulario enviado con éxito.');
-      document.getElementById('contactForm').reset(); // Resetear el formulario
-    })
-    .catch(error => {
-      console.error('Error al enviar el formulario:', error);
-      alert('Hubo un error al enviar el formulario.');
+const form = document.getElementById('contactForm');
+
+  form.addEventListener('submit', function (event) {
+    event.preventDefault(); // Evita el envío predeterminado del formulario
+
+    // Mostrar mensaje de carga antes de enviar
+    Swal.fire({
+      title: 'Enviando...',
+      text: 'Por favor, espera un momento.',
+      icon: 'info',
+      showConfirmButton: false,
+      allowOutsideClick: false,
     });
+
+    // Enviar el formulario mediante AJAX
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+    })
+      .then(response => {
+        if (response.ok) {
+          // Cerrar el mensaje de carga y mostrar éxito
+          Swal.fire({
+            icon: 'success',
+            title: 'Mensaje enviado',
+            text: 'Gracias por contactarnos. Nos pondremos en contacto contigo pronto.',
+          });
+
+          // Limpiar el formulario
+          form.reset();
+        } else {
+          // Mostrar mensaje de error
+          Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'Hubo un problema al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.',
+          });
+        }
+      })
+      .catch(() => {
+        // Mostrar mensaje de error en caso de fallo en el fetch
+        Swal.fire({
+          icon: 'error',
+          title: 'Error',
+          text: 'Hubo un problema al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.',
+        });
+      });
   });
-  

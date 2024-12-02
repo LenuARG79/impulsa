@@ -670,39 +670,40 @@ header {
     margin-bottom: 5%;
 }
 
-.form-contacto {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto
+input, textarea {
+    margin-bottom: 10px !important;
 }
 
-form {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    max-width: 400px;
-  }
-  input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  button:hover {
-    background-color: #0056b3;
-  }
+input::placeholder,
+textarea::placeholder {
+  font-family: "Poppins" !important;
+  font-size: 14px;
+  color: #e16f11 !important;
+}
+
+button {
+    margin-top: 12px !important; /* Espaciado superior */
+    padding: 10px 23px !important; /* Tamaño del botón */
+    font-family: "Poppins" !important; /* Cambia el tipo de letra */
+    font-size: 16px !important; /* Tamaño del texto */
+    font-weight: bold !important;
+    background-color: #ffde00 !important; /* Color de fondo del botón */
+    color: #e16f11 !important; /* Color del texto */
+    border: none !important; /* Sin borde */
+    border-radius: 5px !important; /* Bordes redondeados */
+    cursor: pointer !important; /* Puntero en hover */
+    transition: background-color 0.3s !important; /* Efecto de transición para el cambio de color */
+}
+  
+button:hover {
+    background-color: #e16f11 !important; /* Cambia el color de fondo cuando el mouse pasa sobre el botón */
+    color: #ffde00 !important;
+}
+  
+button:focus {
+    outline: none !important; /* Elimina el borde del enfoque */
+}
+
 
 @media (min-width:768px) and (max-width:1024px){
     .contenedor-logo-menu-pc {
