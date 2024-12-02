@@ -22,10 +22,10 @@ body {
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    font-size: 14px;
+    font-size:clamp(14px,2vw, 16px);
     cursor: pointer;
-    writing-mode: vertical-rl; /* Hace que el texto sea vertical */
-    text-orientation: mixed; /* Asegura que las letras estén en su posición normal */
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
 }
 
 .whatsapp-tab:hover {
