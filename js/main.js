@@ -113,21 +113,31 @@ const form = document.getElementById('contactForm');
     const acceptBtn = document.getElementById("acceptCookies");
     const declineBtn = document.getElementById("declineCookies");
   
-    // Revisa si el usuario ya interactuó con el banner
-    if (!localStorage.getItem("cookiesAccepted")) {
+    // Revisar si el usuario ya aceptó/rechazó cookies
+    const cookiesAccepted = localStorage.getItem("cookiesAccepted");
+  
+    if (cookiesAccepted === "true") {
+      // Si ya aceptó, no mostramos el banner
+      cookieBanner.style.display = "none";
+    } else if (cookiesAccepted === "false") {
+      // Si rechazó, puedes agregar lógica específica aquí si es necesario
+      cookieBanner.style.display = "none";
+    } else {
+      // Si no hay registro previo, mostrar el banner
       cookieBanner.style.display = "flex";
     }
   
-    // Manejo del botón "Aceptar"
+    // Botón "Aceptar"
     acceptBtn.addEventListener("click", () => {
-      localStorage.setItem("cookiesAccepted", "true");
-      cookieBanner.style.display = "none";
+      localStorage.setItem("cookiesAccepted", "true"); // Guardar aceptación
+      cookieBanner.style.display = "none"; // Ocultar banner
     });
   
-    // Manejo del botón "Cancelar"
+    // Botón "Cancelar"
     declineBtn.addEventListener("click", () => {
-      localStorage.setItem("cookiesAccepted", "false");
-      cookieBanner.style.display = "none";
+      localStorage.setItem("cookiesAccepted", "false"); // Guardar rechazo
+      cookieBanner.style.display = "none"; // Ocultar banner
     });
   });
+  
   

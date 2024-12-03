@@ -107,9 +107,9 @@ header {
     position: fixed;
     top: 12vh;
     left: -100%;
-    width: 100%;
+    width: 50%;
     height: 100%;
-    background-color: #211f3c;
+    background-color:#17162a80;
     transition: left 0.5s ease;
     z-index: 100;
 }
@@ -811,6 +811,36 @@ footer {
     margin-left: 5px;
 }
 
+/*Página Contanto*/
+
+.seccion-pagina-contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-pagina-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5%;
+    width: 100%;
+    border-radius: 35px;
+    height: auto;
+    margin-bottom: 5%;
+}
+
+
+.contenedor-item-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+.item-pag-contacto {
+    display: flex;
+    text-align: center;
+}
 
 
 /* Politica de Cookies*/
@@ -868,7 +898,7 @@ footer {
     }    
     #menu {
         position: fixed;
-        top: 15vh; 
+        top: 10vh; 
     }
         
     .menu-mobil {
@@ -938,7 +968,7 @@ footer {
 @media (min-width:320px) and (max-width:767px){
     #menu {
         position: fixed;
-        top: 15vh; 
+        top: 10vh; 
     }
         
     .contenedor-logo-menu-pc {
