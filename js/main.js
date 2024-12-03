@@ -108,3 +108,26 @@ const form = document.getElementById('contactForm');
         });
       });
   });
+  document.addEventListener("DOMContentLoaded", function () {
+    const cookieBanner = document.getElementById("cookieBanner");
+    const acceptBtn = document.getElementById("acceptCookies");
+    const declineBtn = document.getElementById("declineCookies");
+  
+    // Revisa si el usuario ya interactuó con el banner
+    if (!localStorage.getItem("cookiesAccepted")) {
+      cookieBanner.style.display = "flex";
+    }
+  
+    // Manejo del botón "Aceptar"
+    acceptBtn.addEventListener("click", () => {
+      localStorage.setItem("cookiesAccepted", "true");
+      cookieBanner.style.display = "none";
+    });
+  
+    // Manejo del botón "Cancelar"
+    declineBtn.addEventListener("click", () => {
+      localStorage.setItem("cookiesAccepted", "false");
+      cookieBanner.style.display = "none";
+    });
+  });
+  
