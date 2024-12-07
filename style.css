@@ -816,8 +816,11 @@ footer {
 
 .seccion-pagina-contacto {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: auto;
 }
 
 .contenedor-pagina-contacto {
@@ -825,31 +828,68 @@ footer {
     flex-direction: column;
     justify-content: center;
     margin-top: 5%;
-    width: 100%;
-    border-radius: 35px;
     height: auto;
-    margin-bottom: 5%;
+    margin-bottom: 5px;
 }
 
-.contendor-img-contacto {
+.contenedor-contacto {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.contendor-grl-contacto {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: auto;
+    justify-content: left;
+}
+
+.h6-contacto {
+    font-family: "Poppins";
+    font-size: clamp(14px, 4vw, 18px);
+    color: #e16f11;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+
+.contenedor-img-contacto {
     display: flex;
     justify-items: center;
-}
-
-.img-contacto {
-    width: 100%;
+    align-items: center;
+    max-width: 350px;
     height: auto;
+    margin-left: 5%;
 }
 
 .contenedor-item-contacto {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-direction: row;
     gap: 5px;
+    width: 350px;
+    justify-content: left;
+    align-content: center;
+    margin-left: 5px;
 }
 .item-pag-contacto {
     display: flex;
     text-align: center;
+}
+
+.fa-pag-cto {
+    color: #ffde00 !important;
+    font-size: 18px;
+    margin-right: 5px;
+}
+.p3-contacto {
+    color: white;
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: normal;
+    margin-left: 5px;
 }
 
 

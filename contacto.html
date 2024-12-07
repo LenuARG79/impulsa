@@ -93,31 +93,59 @@
 <!--Fin contenedor Logo + Menu-->
 <section class="seccion-pagina-contacto">
     <div class="contenedor-pagina-contacto">
-    <h4 class="h4-valores">Escribinos: estamos para <span class="span-valores">ayudarte</span></h4>
-    <p class="p-valores">Si tienes preguntas, necesitas asesoramiento o deseas más información sobre nuestros productos y servicios, no dudes en escribirnos. Nuestro equipo estará encantado de responderte lo antes posible. ¡Tu mensaje es importante para nosotros!</p>
-        <div>
-            <div class="contenedor-item-contacto">
-                <div class="item-pag-contacto"> 
-                    <div class="contenedor-img-contacto">
-                        <img class="img-contacto" src="img/fondo_impulsa_contacto.svg" alt="foto de fondo amairillo con logos de contacto por telefono, mail o whatsapp para impulsa">
-                    </div>
-                   <h6>Teléfono</h6>  
-                   <i class="fa-solid fa-phone-volume fa-cto"></i>
-                   <p class="p3-footer">+54 9 11 5148 5804</p>
-                </div>
-                
-                <div class="item-pag-contacto">
-                    <h6>Correo</h6>
-                   <i class="fa-regular fa-envelope fa-cto"></i>
-                   <p class="p3-footer">hola@impulsa.net.ar</p>
-                </div>
-                <div class="item-pag-contacto">
-                    <h6>Ubicación</h6>
-                   <i class="fa-solid fa-location-dot fa-cto"></i>
-                  <p class="p3-footer">Cuccha Cucha 639, Cabalito, C.A.B.A. - Argentina</p>
+        <h4 class="h4-valores">Escribinos: estamos para <span class="span-valores">ayudarte</span></h4>
+        <p class="p-valores">Si tienes preguntas, necesitas asesoramiento o deseas más información sobre nuestros productos y servicios, no dudes en escribirnos. Nuestro equipo estará encantado de responderte lo antes posible. ¡Tu mensaje es importante para nosotros!</p>
+    </div>        
+    <div class="contenedor-contacto"> 
+        <div class="contenedor-img-contacto">
+            <img class="img-contacto" src="img/foto_impulsa_contacto.svg" alt="foto de fondo amairillo con logos de contacto por telefono, mail o whatsapp para impulsa">
+        </div>
+            <div class="contenedor-grl-contacto">
+                <h6 class="h6-contacto">Teléfono</h6> 
+                <div class="contenedor-item-contacto">
+                    <i class="fa-solid fa-phone-volume fa-pag-cto"></i>
+                    <p class="p3-contacto">+54 9 11 5148 5804</p>
                 </div>
             </div>    
-       </div>
+            <div class="contenedor-grl-contacto">
+                <h6 class="h6-contacto">Correo</h6>
+                <div class="contenedor-item-contacto">    
+                    <i class="fa-regular fa-envelope fa-pag-cto"></i>
+                    <p class="p3-contacto">hola@impulsa.net.ar</p>
+                </div>
+            </div>
+            <div class="contenedor-grl-contacto">
+                <h6 class="h6-contacto">Ubicación</h6>
+                <div class="contenedor-item-contacto">
+                    <i class="fa-solid fa-location-dot fa-pag-cto"></i>
+                    <p class="p3-contacto">Cuccha Cucha 639, Cabalito, C.A.B.A. - Argentina</p>
+                </div>
+            </div>
+            <div class="container">
+                <form action="https://formsubmit.co/impulsa.arg@gmail.com" method="POST" id="contactForm">
+                <!-- Campo oculto para desactivar CAPTCHA -->
+                <input type="hidden" name="_captcha" value="false">
+                <div class="form-group">
+                    <div class="form-row">
+                    <div class="col">
+                        <input type="text" name="name" class="form-control" placeholder="Tu Nombre" required>
+                    </div>
+                    <div class="col">
+                        <input type="number" name="number" class="form-control" placeholder="Teléfono" required>
+                    </div>
+                    <div class="col">
+                        <input type="email" name="email" class="form-control" placeholder="Correo electrónico" required>
+                    </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Ingresá tu consulta" class="form-control" name="message" rows="10" required></textarea>
+            </div>
+                <button type="submit" class="btn btn-lg btn-dark btn-block form-btn">Enviar</button>
+                </form>
+            </div>    
+    </div>    
+</section>
 <!--Footer-->
 <footer>
     <div class="contenedor-footer">
