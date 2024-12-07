@@ -742,7 +742,7 @@ footer {
 
 .p2-footer {
     font-family: "Poppins";
-    color: #ffde00;
+    color: white;
     font-size: 12px;
     max-width: 251px;
     text-align: center;
@@ -766,7 +766,7 @@ footer {
 .a-footer {
     text-decoration: none;
     font-family: "Poppins";
-    color: #ffde00;
+    color: white;
     font-weight: normal;
     margin-left: 5px;
 }
@@ -805,7 +805,7 @@ footer {
     margin-right: 5px;
 }
 .p3-footer {
-    color: #e16f11;
+    color: white;
     font-family: "Poppins";
     font-size: 12px;
     font-weight: normal;
@@ -831,6 +831,15 @@ footer {
     margin-bottom: 5%;
 }
 
+.contendor-img-contacto {
+    display: flex;
+    justify-items: center;
+}
+
+.img-contacto {
+    width: 100%;
+    height: auto;
+}
 
 .contenedor-item-contacto {
     display: flex;
