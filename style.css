@@ -700,14 +700,14 @@ header {
 .p-card-contenido-nosotros {
     font-family: "Poppins";
     color: white;
-    font-size: clamp(12px, 3vw, 14px);
+    font-size: clamp(13px, 3vw, 15px);
     letter-spacing: 0.3px;
     margin-left: 20px;
     margin-right: 15px;
 }
 
 .h6-p-nosotros {
-    padding-left: 15px;
+    padding-left: 10px;
 }
 
 .nos-4-5 {
