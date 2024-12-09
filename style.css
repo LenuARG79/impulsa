@@ -822,6 +822,14 @@ header {
     color: #ff3131;
 }
 
+.color-card-8-servicios {
+    border: 2px double #ffde00;
+    border-radius: 20px;
+}
+
+.color-8-servicios{
+    color:#ffde00;
+}
 
 
 /* Seccion Contacto */
