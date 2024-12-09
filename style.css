@@ -831,6 +831,43 @@ header {
     color:#ffde00;
 }
 
+.color-card-9-servicios {
+    border: 2px double #8c52ff;
+    border-radius: 20px;
+}
+
+.color-9-servicios{
+    color:#8c52ff;
+}
+
+.color-card-10-servicios {
+    border: 2px double #b3580d;
+    border-radius: 20px;
+}
+
+.color-10-servicios{
+    color:#b3580d;
+}
+
+.color-card-11-servicios {
+    border: 2px double #52ff00;
+    border-radius: 20px;
+}
+
+.color-11-servicios{
+    color:#52ff00;
+}
+
+.color-card-12-servicios {
+    border: 2px double #ffde00;
+    border-radius: 20px;
+}
+
+.color-12-servicios{
+    color:#ffde00;
+}
+
+
 
 /* Seccion Contacto */
 
