@@ -786,6 +786,44 @@ header {
     color: #ff005c;
 }
 
+.color-card-4-servicios {
+    border: 2px double #e16f11;
+    border-radius: 20px;
+}
+
+.color-4-servicios{
+    color: #e16f11;
+}
+
+.color-card-5-servicios {
+    border: 2px double #ff66c4;
+    border-radius: 20px;
+}
+
+.color-5-servicios{
+    color: #ff66c4;
+}
+
+.color-card-6-servicios {
+    border: 2px double #52ff00;
+    border-radius: 20px;
+}
+
+.color-6-servicios{
+    color: #52ff00;
+}
+
+.color-card-7-servicios {
+    border: 2px double #ff3131;
+    border-radius: 20px;
+}
+
+.color-7-servicios{
+    color: #ff3131;
+}
+
+
+
 /* Seccion Contacto */
 
 .contenedor-contacto-inicio {
@@ -1411,6 +1449,11 @@ footer {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.h4-servicios {
+    width: 95%x;
+}
+
 .nos-4-5 {
     margin-top: 0px;
 }
