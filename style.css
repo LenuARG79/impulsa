@@ -713,8 +713,78 @@ header {
 .nos-4-5 {
     margin-top: 30px;
 }
-
 /*fin seccion Nosotros*/
+
+/* Seccion Servicios*/
+.seccion-servicios {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 15px;
+}
+
+.contenedor-card-servicios {
+    display:flex ;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-content: center;
+}
+
+.card-servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    height: auto;
+}
+.h4-servicios {
+    font-family: "Poppins";
+    font-size: clamp(14px, 4vw, 18px);
+    margin-left: 50px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.ul-servicios {
+    font-family: "Poppins";
+    color: white;
+    font-size: clamp(13px, 3vw, 15px);
+    font-style: normal !important;
+    margin-left: 20px;
+    margin-right: 15px;
+}
+
+.color-card-1-servicios {
+    border: 2px double #8c52ff;
+    border-radius: 20px;
+}
+.color-1-servicios{
+    color: #8c52ff;
+    margin-bottom: 20px;
+}
+
+.color-card-2-servicios {
+    border: 2px double #25d366;
+    border-radius: 20px;
+}
+
+.color-2-servicios{
+    color: #25d366;
+}
+
+.color-card-3-servicios {
+    border: 2px double #ff005c;
+    border-radius: 20px;
+}
+
+.color-3-servicios{
+    color: #ff005c;
+}
 
 /* Seccion Contacto */
 
@@ -1343,6 +1413,14 @@ footer {
 }
 .nos-4-5 {
     margin-top: 0px;
+}
+
+.card-servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: auto;
 }
 
 }
