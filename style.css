@@ -131,6 +131,7 @@ header {
     font-family: "Poppins";
     font-size: clamp(16px, 2vw, 20px);
     transition: color 0.3s;
+    font-style: normal;
 }
 
 #menu ul li a:hover {
@@ -155,7 +156,7 @@ header {
     text-decoration: none;
     color: #303030;
     font-family: "Poppins";
-    font-weight: bold;
+    /*font-weight: bold;*/
     position: relative;
     padding-bottom: 5px;
 }
@@ -867,6 +868,15 @@ header {
     color:#ffde00;
 }
 
+.contenedor-servicios-ademas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
 
 
 /* Seccion Contacto */
@@ -1496,7 +1506,7 @@ footer {
 }
 
 .h4-mobil {
-    width: 90%;
+    width: 80%;
 }
 
 .nos-4-5 {
