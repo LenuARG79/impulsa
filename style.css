@@ -727,12 +727,16 @@ header {
     margin-bottom: 15px;
 }
 
+.p-servicio {
+    margin-bottom: 40px;
+}
+
 .contenedor-card-servicios {
     display:flex ;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 20px;
     align-content: center;
 }
 
@@ -740,144 +744,40 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 500px;
+    width: 350px;
     height: auto;
 }
+
+
+.fa-servicios {
+    color: #ffde00;
+    text-align: center;
+    font-size: clamp(18px, 5vw, 25px);
+}
+
 .h4-servicios {
     font-family: "Poppins";
     font-size: clamp(14px, 4vw, 18px);
-    margin-left: 50px;
     margin-top: 15px;
     margin-bottom: 20px;
+    color: white;
+    text-align: center;
 }
 
-.ul-servicios {
+.span-servicios {
+    color: #ffde00;
+}
+
+.p-servicios {
     font-family: "Poppins";
     color: white;
     font-size: clamp(13px, 3vw, 15px);
     font-style: normal !important;
+    text-align: center;
     margin-left: 20px;
     margin-right: 15px;
+    letter-spacing: 0.3px;
 }
-
-.color-card-1-servicios {
-    border: 2px double #8c52ff;
-    border-radius: 20px;
-}
-.color-1-servicios{
-    color: #8c52ff;
-    margin-bottom: 20px;
-}
-
-.color-card-2-servicios {
-    border: 2px double #25d366;
-    border-radius: 20px;
-}
-
-.color-2-servicios{
-    color: #25d366;
-}
-
-.color-card-3-servicios {
-    border: 2px double #ff005c;
-    border-radius: 20px;
-}
-
-.color-3-servicios{
-    color: #ff005c;
-}
-
-.color-card-4-servicios {
-    border: 2px double #e16f11;
-    border-radius: 20px;
-}
-
-.color-4-servicios{
-    color: #e16f11;
-}
-
-.color-card-5-servicios {
-    border: 2px double #ff66c4;
-    border-radius: 20px;
-}
-
-.color-5-servicios{
-    color: #ff66c4;
-}
-
-.color-card-6-servicios {
-    border: 2px double #52ff00;
-    border-radius: 20px;
-}
-
-.color-6-servicios{
-    color: #52ff00;
-}
-
-.color-card-7-servicios {
-    border: 2px double #ff3131;
-    border-radius: 20px;
-}
-
-.color-7-servicios{
-    color: #ff3131;
-}
-
-.color-card-8-servicios {
-    border: 2px double #ffde00;
-    border-radius: 20px;
-}
-
-.color-8-servicios{
-    color:#ffde00;
-}
-
-.color-card-9-servicios {
-    border: 2px double #8c52ff;
-    border-radius: 20px;
-}
-
-.color-9-servicios{
-    color:#8c52ff;
-}
-
-.color-card-10-servicios {
-    border: 2px double #b3580d;
-    border-radius: 20px;
-}
-
-.color-10-servicios{
-    color:#b3580d;
-}
-
-.color-card-11-servicios {
-    border: 2px double #52ff00;
-    border-radius: 20px;
-}
-
-.color-11-servicios{
-    color:#52ff00;
-}
-
-.color-card-12-servicios {
-    border: 2px double #ffde00;
-    border-radius: 20px;
-}
-
-.color-12-servicios{
-    color:#ffde00;
-}
-
-.contenedor-servicios-ademas {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 20px;
-}
-
-
 
 /* Seccion Contacto */
 
