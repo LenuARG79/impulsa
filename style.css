@@ -965,109 +965,64 @@ footer {
 /*Página Contanto*/
 
 .seccion-pagina-contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     height: auto;
-}
-
-.contenedor-contacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
-
-.contenedor-pagina-contacto {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 5%;
-    height: auto;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
-.contenedor-contacto {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-    height: auto;
+.contenedor-contactos {
+    display:flex;
+    justify-content: space-evenly;
     gap: 20px;
-}
-
-.contenedor-img-contacto, 
-.contenedor-info-contacto{
-    flex: 1;
-    max-width: 30%; 
-}    
-
-.contendor-info-contacto {
-    display: flex;
-    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .contenedor-grl-contacto {
     display: flex;
     flex-direction: column;
-    width: 200px;
-    height: auto;
     justify-content: center;
-    margin-left: 40px;
-    margin-top: 35px;
+    width: 350px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 10px;
 }
 
 .h6-contacto {
     font-family: "Poppins";
     font-size: clamp(14px, 4vw, 18px);
     color: #e16f11;
-    margin-bottom: 20px;
-    margin-left: 5px;
-}
-
-.contenedor-img-contacto {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    max-width: 350px;
-    height: auto;
-    margin-left: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
 }
 
 .contenedor-item-contacto {
     display: flex;
     flex-direction: row;
-    gap: 5px;
-    width: 350px;
+    gap: 10px;
+    /*width: 330px;*/
     justify-content: left;
-    align-content: center;
-    margin-left: 5px;
-}
-.item-pag-contacto {
-    display: flex;
-    text-align: center;
 }
 
 .fa-pag-cto {
     color: #ffde00 !important;
-    font-size: 18px;
-    margin-right: 5px;
+    font-size: clamp(16px, 3vw, 18px);
 }
+
 .p3-contacto {
     color: white;
     font-family: "Poppins";
-    font-size: 16px;
+    font-size: clamp(14px, 3vw, 16px);
     font-weight: normal;
     margin-left: 5px;
+    text-align: left;
 }
-
 
 /* Politica de Cookies*/
 
@@ -1212,6 +1167,14 @@ footer {
     .nos-4-5 {
         margin-top: 0px;
     }
+    
+    .contenedor-contactos {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 @media (min-width:320px) and (max-width:767px){    
@@ -1419,6 +1382,12 @@ footer {
     justify-content: center;
     width: 300px;
     height: auto;
+}
+.contenedor-contactos {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 }
