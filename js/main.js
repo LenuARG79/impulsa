@@ -36,7 +36,7 @@ document.querySelector('.whatsapp-tab').addEventListener('click', function () {
   alert('Abriendo WhatsApp...'); // Aquí puedes integrar un mensaje de alerta si lo deseas.
 
   // Redirige a WhatsApp con el mensaje predefinido
-  const phoneNumber = '+5491151485804'; // Tu número de WhatsApp
+  const phoneNumber = '+5491121658403'; // Tu número de WhatsApp
   const message = encodeURIComponent('Gracias por comunicarte con Impulsa, agencia de MKT Digital. En breve serás atendido.');
   
   // Redirigir al enlace de WhatsApp
