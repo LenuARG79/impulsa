@@ -1210,9 +1210,9 @@ footer {
     }
 
     .fa-user {
-        font-size: 18px;
-        color: yellow;
-        margin-right: 0.25rem;
+        font-size: 18px !important;
+        color: yellow !important;
+        margin-right: 0.4rem !important;
     }
 
     /* Estilo para los enlaces del menú móvil */
