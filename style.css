@@ -1098,7 +1098,7 @@ footer {
         margin-left: 20%;
         margin-top: 10%;
     }
-        
+     
     .h1-main {
         text-align: center;
         max-width: 980px;
@@ -1207,6 +1207,12 @@ footer {
         width: 130px;
         margin-left: 15%;
         margin-top: 10%;
+    }
+
+    .fa-user {
+        font-size: 18px;
+        color: yellow;
+        margin-right: 0.25rem;
     }
 
     /* Estilo para los enlaces del menú móvil */
