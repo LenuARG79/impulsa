@@ -64,6 +64,11 @@ header {
     visibility: visible;
 }
 
+.fa-user {
+    font-size: 20px;
+    color: yellow;
+}
+
 /*Menu Hamburguesa */
 .hamburger {
     cursor: pointer;

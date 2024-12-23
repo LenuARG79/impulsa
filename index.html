@@ -81,6 +81,7 @@
             <li><a href="nosotros.html" class="menu-link" onclick="closeMenu()">Nosotros</a></li>
             <li><a href="servicios.html" class="menu-link" onclick="closeMenu()">Soluciones</a></li>
             <li><a href="contacto.html" class="menu-link" onclick="closeMenu()">Contacto</a></li>
+            <li><a href="https://impulsa.odoo.com" class="menu-link" onclick="closeMenu()" target="_blank"><i data-bs-toggle="tooltip" title="Portál de clientes" class="fa-solid fa-user"></i></a></li>
         </ul>
     </nav>    
 </div>
@@ -95,6 +96,7 @@
             <li><a href="nosotros.html" class="menu-link">Nosotros</a></li>
             <li><a href="servicios.html" class="menu-link">Soluciones</a></li>
             <li><a href="contacto.html" class="menu-link">Contacto</a></li>
+            <li><a href="https://impulsa.odoo.com" target="_blank"><i data-bs-toggle="tooltip" title="Portál de clientes" class="fa-solid fa-user"></i></a></li>
         </ul>    
     </div>
 </div>
@@ -308,7 +310,7 @@
         <div class="links-footer">
         <i class="fa-solid fa-arrow-right"><a class="a-footer" href="index.html">Inicio</a></i>
         <i class="fa-solid fa-arrow-right"><a class="a-footer" href="nosotros.html">Nosotros</a></i>
-        <i class="fa-solid fa-arrow-right"><a class="a-footer" href="servicios.html">Servicios</a></i>
+        <i class="fa-solid fa-arrow-right"><a class="a-footer" href="servicios.html">Soluciones</a></i>
         <i class="fa-solid fa-arrow-right"><a class="a-footer" href="contacto.html">Contacto</a></i>
         </div>
     </div>
@@ -352,6 +354,13 @@
 </script>
 <!-- Fin Boostrap-->
 
+<!--Bootstrap tooltips-->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+ <script> const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+ </script>
+ <!-- Fin Boostrap tooltips----> 
+
 <!-- SweetAlert2 JS -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
@@ -359,6 +368,7 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQSPFWS8"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+
 
 </body>
 </html>
