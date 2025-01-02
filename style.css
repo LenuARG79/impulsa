@@ -668,9 +668,9 @@ header {
 }
 .contenedor-card-nosotros {
     display:flex ;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    /*flex-wrap: wrap;*/
     align-content: center;
 }
 
@@ -682,19 +682,20 @@ header {
     margin-left: 10px;
     margin-right: 10px;
 }
+
 .p-card-nosotros {
     font-family: "Poppins";
     color: #ffde00;
     font-size: clamp(40px, 8vw, 70px);
     margin-left: 5px;
     margin-right: 5px;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 .card-contenido-nosotros {
     display: flex;
     flex-direction: column;
     text-align: left;
-    width: 350px;
+    width: 80%;
 }
 .h6-card-contenido-nosotros {
     font-family: "Poppins";
@@ -716,9 +717,15 @@ header {
     padding-left: 10px;
 }
 
-.nos-4-5 {
-    margin-top: 30px;
+.span-card-nosotros {
+    color: #ffde00;
 }
+
+@media (min-width:768px) and (max-width:1024px){
+    .nos-4-5 {
+        margin-top: 30px;
+    }
+}    
 /*fin seccion Nosotros*/
 
 /* Seccion Servicios*/
